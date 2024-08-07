@@ -27,7 +27,7 @@ class MainActivity: FlutterActivity() {
 
     private fun turnOnFlashlight() {
         val cameraManager = getSystemService(Context.CAMERA_SERVICE) as CameraManager
-        val cameraId = cameraManager.cameraIdList[0] // Usually back camera is at 0 position.
+        val cameraId = cameraManager.cameraIdList[0] 
         cameraManager.setTorchMode(cameraId, true)
     }
 
